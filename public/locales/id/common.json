@@ -1,3 +1,23 @@
 {
-    "hallo":"Hallo Dunia"
+  "hallo": "Hi!, Saya",
+  "dhello": "Pengalaman Tingkat Menengah dalam Desain Web dan pengetahuan pengembangan, menghasilkan karya berkualitas",
+  "about1": "Tentang saya",
+  "about2": "Perkenalan",
+  "personality": "Kepribadian",
+  "experience": "Pengalaman",
+  "certificates": "Sertifikat",
+  "about3": "Hallo, saya Zinedine Ziddan Fahdlevy, saya lulusan jurusan Sistem Informatika, Jaringan dan Aplikasi di SMK Negeri 26 Jakarta",
+  "tabAbout": ["Kepribadian", "Pengalaman", "Sertifikat"],
+  "personality1": "Saya memiliki pengalaman bekerja selama 2 tahun di beberapa bidang pengembangan Aplikasi, termasuk Front End Developer, Back End Developer, dan Full Stack Developer. Saya ahli dalam membuat berbagai keperluan Website dengan antarmuka yang responsif serta berhasil meningkatkan muat halaman website hingga 50% dan meningkatkan konversi sebesar 25% dengan meminimalkan penggunaan paket pihak ketiga, file javascript, dan CSS menggunakan framework Next JS, React JS, TailwindCSS",
+  "personality2": "Saya orang yang bertanggung jawab, pekerja keras, mempunyai rasa penasaran yang kuat, dapat bekerja sama sebagai tim dan disiplin dalam mengerjakan segala hal. Selama disekolah saya selalu dilatih dan diberikan tantangan baru agar saya selalu bisa mengerjakan sesuatu dengan baik dan cepat. Selain itu, saya juga orang yang sangat tertarik di dunia programming, oleh sebabnya saya sangat antusias mempelajari tentang teknologi dan lingkungan baru",
+  "skills1": "Keterampilan",
+  "skills2": "Profesi Saya",
+  "skills3": "Saya ahli dalam merancang dan mengembangkan website dengan tampilan yang responsif, user friendly, muat halaman cepat, dan SEO yang baik",
+  "quotes": "Menarilah seperti tidak ada yang melihat, Mencintailah seperti tidak akan tersakiti, Bernyanyilah seperti tidak ada yang akan mendengarkan dan hiduplah layaknya surga ada di dunia ini",
+  "contact1": "Kontak",
+  "contact2": "Hubungi Saya",
+  "contact3": "Jangan ragu untuk menghubungi saya. Saya senang mendapat telepon & kunjungan pada jam kerja. Email saya juga bisa dihubungi kapan saja!",
+  "address": "Alamat",
+  "phone": "Telepon",
+  "submit": "Kirim Pesan"
 }

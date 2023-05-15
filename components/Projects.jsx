@@ -43,7 +43,7 @@ export default function Projects() {
             description:"Projek pembuatan website yang bertujuan menyediakan platform bagi perusahaan untuk membuat, menginformasikan dan menyiarkan lowongan kerjanya sesuai kualifikasi dari perusahaan serta dengan fitur psychotest, memungkinkan untuk perusahaan menyediakan psychotest yang bisa didapatkan dari pycholog, psychotest yang disediakan gratis maupun untuk membuatnya sendiri",
             image:"/images/psychotest-client.jpg",
             link:"https://psychotest-client.gnusa.id/",
-            label:["Web Design", "Next JS", "SEO", "PWA", "Responsive", "TailwindCSS", "Multiple Role", "Content Editable"]
+            label:["Web Design", "Next JS", "SEO", "PWA", "Responsive", "TailwindCSS", "Multiple Role", "Content Editable", "Python"]
         },
         {
             id:6,
@@ -51,7 +51,7 @@ export default function Projects() {
             description:"Projek pembuatan website yang bertujuan menyediakan platform bagi kandidat pencari kerja untuk menemukan informasi lowongan pekerjaan dari berbagai perusahaan dan industri seperti bidang pekerjaan, lokasi, gaji, dan persyaratan lainnya. Setelah melamar mereka secara otomatis akan melalui psychotest yang telah disediakan pihak perusahaan",
             image:"/images/psychotest.jpg",
             link:"https://psychotest.gnusa.id/",
-            label:["Web Design", "Next JS", "SEO", "PWA", "TailwindCSS"]
+            label:["Web Design", "Next JS", "SEO", "PWA", "TailwindCSS", "Python"]
         },
         {
             id:7,
@@ -168,7 +168,7 @@ export default function Projects() {
                                                     <FaEye/>
                                                 </a>
                                             </Link>
-                                            <a target="_blank" href={item.link} className="border border-gray-500 px-3 py-2 rounded-lg hover:bg-gray-200 transition-all duration-300 ease-in-out text-sm">
+                                            <a target="_blank" href={item.link} className="border border-gray-500 px-3 py-2 rounded-lg dark:hover:bg-gray-900 hover:bg-gray-200 transition-all duration-300 ease-in-out text-sm">
                                                 Go To Website
                                             </a>
                                         </div>
@@ -180,7 +180,7 @@ export default function Projects() {
                     }
 
                     <div class="flex items-center justify-between mt-12 lg:justify-start gap-6">
-                        <button disabled={active == 1 ? true:false} onClick={() => handlerPrevious()} title="left arrow" class="disabled:bg-zinc-300 p-2 text-gray-800 transition-colors duration-300 border rounded-full rtl:-scale-x-100 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-800 hover:bg-gray-100">
+                        <button disabled={active == 1 ? true:false} onClick={() => handlerPrevious()} title="left arrow" class="disabled:bg-zinc-300 dark:disabled:bg-zinc-800 p-2 text-gray-800 transition-colors duration-300 border rounded-full rtl:-scale-x-100 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-800 hover:bg-gray-100">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 md:w-6 md:h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
                             </svg>

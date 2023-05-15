@@ -1,3 +1,23 @@
 {
-    "hallo":"Hallo World"
+  "hallo": "Hi!, I am",
+  "dhello": "Medium Level Experience in Web Design and development knowledge, producing quality work",
+  "about1": "About Me",
+  "about2": "Introduction",
+  "about3": "Hello, I'm Zinedine Ziddan Fahdlevy, I graduated from Sistem Informatika, Jaringan dan Aplikasi at SMK Negeri 26 Jakarta",
+  "tabAbout": ["Personality", "Experience", "Certificates"],
+  "personality": "Personality",
+  "experience": "Experience",
+  "certificates": "Certificates",
+  "personality1": "I have 2 years working experience in several application development fields, including Front End Developer, Back End Developer, and Full Stack Developer. I am an expert in making various Website needs with a responsive interface and managed to increase website page loads by up to 50% and increase conversions by 25% by minimizing the use of third party packages, javascript files, and CSS using the framework Next JS, React JS, TailwindCSS",
+  "personality2": "I am a responsible person, hard worker, have a strong sense of curiosity, can work together as a team and discipline in doing everything. While at school I was always trained and given new challenges so I could always do things well and quickly. Besides that, I am also a person who is very interested in the world of programming, that's why I am very enthusiastic about learning about new technologies and environments",
+  "skills1": "Skills",
+  "skills2": "My Profession",
+  "skills3": "I am an expert in designing and developing websites that are responsive, user friendly, fast page loads, and good SEO",
+  "quotes": "Dance like no one is watching, Love like nothing's ever gonna hurt, Sing like no one's gonna listen and live like heaven's here on earth",
+  "contact1": "Contact",
+  "contact2": "Get In Touch",
+  "contact3": "Please feel free to contact me. I am happy to get calls & visits at working hours. My email is also reachable at anytime!",
+  "address": "Address",
+  "phone": "Phone",
+  "submit": "Submit Message"
 }

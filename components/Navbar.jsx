@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import Language from "./Language";
 import {HiMenuAlt3, HiX} from "react-icons/hi"
+import { FaMoon, FaSun } from "react-icons/fa";
 
 
 export default function Navbar({ lang }) {
@@ -13,6 +14,18 @@ export default function Navbar({ lang }) {
     const [mounted, setMounted] = useState(false)
     const [scroll, setScroll] = useState(false)
     const router = useRouter()
+    const defaultLocale = router.locale
+    const [language, setLanguage] = useState(defaultLocale)
+
+    const settingsLanguage = (value) => {
+        if (value == "id") {
+            router.push("/", "/", { locale: "id" })
+            setLanguage("id")
+        } else if (value == "en") {
+            router.push("/", "/", { locale: "en" })
+            setLanguage("en")
+        }
+    }
 
     useEffect(() => {
         setMounted(true)
@@ -97,23 +110,52 @@ export default function Navbar({ lang }) {
                     
 
                     {/* Mobile */}
-                    <button className="py-8 md:hidden" onClick={() => setNavbar(!navbar)}>
+                    <button className="py-2 md:hidden" onClick={() => setNavbar(!navbar)}>
                         <HiMenuAlt3 className="text-3xl"/>
                     </button>
 
-                    <div className={`${navbar ? "visible":"invisible"} fixed bg-black bg-opacity-50 w-full top-0 left-0 h-screen p-5`}>
-                        <div className="bg-white w-full z-20 p-5 rounded-lg">
-                            <div className="flex items-center justify-between">
+                    <div className={`${navbar ? "visible md:invisible":"invisible"} fixed bg-black bg-opacity-50 w-full top-0 left-0 h-screen`}>
+                        <div className={`${navbar ? "opacity-100 translate-x-0":"opacity-0 -translate-x-full"} transition-all duration-300 bg-white dark:bg-gray-900 w-3/4 z-20 rounded-lg h-screen`}>
+                            <div className="flex items-center justify-between p-5">
                                 <h1 className="font-bold text-gray-400 uppercase tracking-wider">Menu</h1>
                                 <button className="font-bold" onClick={() => setNavbar(false)}><HiX /></button>
                             </div>
 
-                            <div className="space-y-2 mt-5 font-bold">
-                                <a href="#home" className="text-center hover:bg-blue-100 py-2 w-full block uppercase transition-all duration-300 text-gray-500 dark:text-gray-300">Home</a>
-                                <a href="#aboutme" className="text-center hover:bg-blue-100 py-2 w-full block uppercase transition-all duration-300 text-gray-500 dark:text-gray-300">About</a>
-                                <a href="#skills" className="text-center hover:bg-blue-100 py-2 w-full block uppercase transition-all duration-300 text-gray-500 dark:text-gray-300">Skills</a>
-                                <a href="#projects" className="text-center hover:bg-blue-100 py-2 w-full block uppercase transition-all duration-300 text-gray-500 dark:text-gray-300">Projects</a>
-                                <a href="#contact" className="text-center hover:bg-blue-100 py-2 w-full block uppercase transition-all duration-300 text-gray-500 dark:text-gray-300">Contact</a>
+                            <div className="space-y-2 mt-3 font-bold h-full">
+                                <a href="#home" className="dark:hover:bg-gray-700 hover:bg-blue-100 px-5 py-2 w-full block uppercase text-gray-500 dark:text-gray-300">Home</a>
+                                <a href="#aboutme" className="dark:hover:bg-gray-700 hover:bg-blue-100 px-5 py-2 w-full block uppercase text-gray-500 dark:text-gray-300">About</a>
+                                <a href="#skills" className="dark:hover:bg-gray-700 hover:bg-blue-100 px-5 py-2 w-full block uppercase text-gray-500 dark:text-gray-300">Skills</a>
+                                <a href="#projects" className="dark:hover:bg-gray-700 hover:bg-blue-100 px-5 py-2 w-full block uppercase text-gray-500 dark:text-gray-300">Projects</a>
+                                <a href="#contact" className="dark:hover:bg-gray-700 hover:bg-blue-100 px-5 py-2 w-full block uppercase text-gray-500 dark:text-gray-300 mb-5">Contact</a>
+                                <div className="py-5 border-b dark:border-gray-500">
+
+                                </div>
+                                <button onClick={() => setTheme(theme == "dark" ? "light":"dark")} className="flex items-center justify-between dark:hover:bg-gray-700 hover:bg-blue-100 px-5 py-2 w-full uppercase text-gray-500 dark:text-gray-300">
+                                    {
+                                        theme == "dark" ?
+                                        <>
+                                            Dark Mode
+                                            <FaMoon />
+                                        </>
+                                        :
+                                        <>
+                                            Light Mode
+                                            <FaSun />
+                                        </>
+                                    }
+                                </button>
+                                <button onClick={() => settingsLanguage(language == "id" ? "en":"id")} className="flex items-center justify-between dark:hover:bg-gray-700 hover:bg-blue-100 px-5 py-2 w-full uppercase text-gray-500 dark:text-gray-300">
+                                    {
+                                        language == "id" ?
+                                        <>
+                                            Indonesia
+                                        </>
+                                        :
+                                        <>
+                                            Inggris
+                                        </>
+                                    }
+                                </button>
                             </div>
                         </div>
                     </div>
