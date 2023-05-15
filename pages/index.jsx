@@ -34,9 +34,9 @@ export default function Home() {
         <div id='home' className='bg-gradient-to-r from-gray-700 dark:from-gray-800 dark:via-gray-900 dark:to-gray-950 via-gray-400 to-gray-300 min-h-screen relative overflow-hidden'>
           <div className='container px-2 md:px-32 pt-12 md:pt-32 mx-auto'>
             <div className='w-full md:w-3/5 p-2 md:p-10 md:mt-24 mb-12 z-20'>
-              <h1 className='text-white font-bold text-2xl md:text-6xl mb-2'>{t("hallo")}</h1>
+              <h1 className='text-white font-bold text-2xl md:text-6xl mb-2'>Hi!, Saya</h1>
               <h1 className='text-white font-bold text-2xl md:text-6xl'>Zinedine Ziddan Fahdlevy</h1>
-              <p className='mt-3 md:mt-10 text-gray-300 text-xs md:text-xl'>{t("dhello")}</p>
+              <p className='mt-3 md:mt-10 text-gray-300 text-xs md:text-xl'>Pengalaman Tingkat Menengah dalam Desain Web dan pengetahuan pengembangan, menghasilkan karya berkualitas</p>
               <div className='grid grid-cols-11 gap-12 mt-5 md:mt-16'>
                 <a target='_blank' href='https://facebook.com/zinedine.ziddan.39'>
                   <FaFacebookF className='text-gray-300 text-2xl'/>
@@ -66,14 +66,14 @@ export default function Home() {
         <div id='skills' className='dark:bg-gray-900 bg-white p-5 min-h-screen flex items-center justify-center'>
           <div className='container mx-auto px-2 md:px-32'>
             <div className='text-center'>
-              <h1 className='text-blue-300 uppercase font-extrabold tracking-wider'>{t("skills1")}</h1>
+              <h1 className='text-blue-300 uppercase font-extrabold tracking-wider'>Skills</h1>
 
               <div className='flex items-center justify-center gap-10 mt-5'>
                 <span className='h-1 bg-gray-300 rounded-md w-20 inline-block'></span>
-                <h1 className='text-2xl md:text-5xl uppercase font-light text-gray-600 dark:text-gray-400'>{t("skills2")}</h1>
+                <h1 className='text-2xl md:text-5xl uppercase font-light text-gray-600 dark:text-gray-400'>My Professions</h1>
                 <span className='h-1 bg-gray-300 rounded-md w-20 inline-block'></span>
               </div>
-              <p className='text-center text-gray-500 dark:text-gray-300 mt-8 md:mt-12 w-full md:w-1/2 mx-auto'>{t("skills3")}</p>
+              <p className='text-center text-gray-500 dark:text-gray-300 mt-8 md:mt-12 w-full md:w-1/2 mx-auto'>Saya ahli dalam merancang dan mengembangkan website dengan tampilan yang responsif, user friendly, muat halaman cepat, dan SEO yang baik</p>
             </div>
             <div className='grid grid-cols-2 gap-5 md:grid-cols-4 md:gap-10 mt-10 md:mt-16'>
               <div className='md:flex items-center gap-3'>
@@ -447,7 +447,7 @@ export default function Home() {
         <div className='w-full bg-gradient-to-b dark:from-gray-900 dark:via-gray-800 dark:to-gray-700 from-blue-800 via-blue-600 to-blue-400 py-10 px-2 md:p-32'>
           <div className='mx-auto w-full md:w-1/2 text-center'>
             <h1 className='text-blue-300 text-sm uppercase tracking-wider font-bold'>William W. Purkey</h1>
-            <p className='text-xl md:text-3xl leading-10 text-blue-200 mt-2 md:mt-5'><span className='font-bold text-4xl font-serif'>"</span>{t("quotes")}<span className='font-bold text-4xl font-serif'>"</span></p>
+            <p className='text-xl md:text-3xl leading-10 text-blue-200 mt-2 md:mt-5'><span className='font-bold text-4xl font-serif'>"</span>Menarilah seperti tidak ada yang melihat, Mencintailah seperti tidak akan tersakiti, Bernyanyilah seperti tidak ada yang akan mendengarkan dan hiduplah layaknya surga ada di dunia ini<span className='font-bold text-4xl font-serif'>"</span></p>
           </div>
         </div>
 
@@ -457,20 +457,20 @@ export default function Home() {
         <div id='contact' className='bg-light dark:bg-gray-700 p-5 min-h-screen h-full py-32 relative'>
           <div className='container mx-auto px-2 md:px-32'>
             <div className='text-center'>
-              <h1 className='text-blue-300 uppercase font-extrabold tracking-wider'>{t("contact1")}</h1>
+              <h1 className='text-blue-300 uppercase font-extrabold tracking-wider'>Contact</h1>
 
               <div className='flex items-center justify-center gap-10 mt-5'>
                 <span className='h-1 bg-gray-300 rounded-md w-20 inline-block'></span>
-                <h1 className='text-2xl md:text-5xl uppercase font-light text-gray-600 dark:text-gray-400'>{t("contact2")}</h1>
+                <h1 className='text-2xl md:text-5xl uppercase font-light text-gray-600 dark:text-gray-400'>Get in touch</h1>
                 <span className='h-1 bg-gray-300 rounded-md w-20 inline-block'></span>
               </div>
-              <p className='text-center text-gray-500 dark:text-gray-300 mt-8 md:mt-12 w-full md:w-1/2 mx-auto'>{t("contact3")}</p>
+              <p className='text-center text-gray-500 dark:text-gray-300 mt-8 md:mt-12 w-full md:w-1/2 mx-auto'>Please feel free to contact me. I am happy to get calls & visits at working hours. My email is also reachable at anytime!</p>
             </div>
 
             <div className='grid grid-cols-1 md:grid-cols-3 gap-10 mt-16'>
               <div className='text-center mx-auto'>
                 <FaMap className='text-blue-300 text-5xl mx-auto'/>
-                <h1 className='font-bold uppercase text-sm mt-5 mb-3'>{t("address")}</h1>
+                <h1 className='font-bold uppercase text-sm mt-5 mb-3'>Address</h1>
                 <p className='text-zinc-400 font-bold mb-2'>Cakung, Jakarta Timur, DKI Jakarta</p>
               </div>
               <div className='text-center mx-auto'>
@@ -481,7 +481,7 @@ export default function Home() {
               </div>
               <div className='text-center mx-auto'>
                 <FaPhone className='text-blue-300 text-4xl mx-auto'/>
-                <h1 className='font-bold uppercase text-sm mt-5 mb-3'>{t("phone")}</h1>
+                <h1 className='font-bold uppercase text-sm mt-5 mb-3'>Phone</h1>
                 <p className='text-zinc-400 font-bold mb-2'>(+62) 895 0878 1380</p>
                 <p className='text-zinc-400 font-bold'>(+62) 812 9015 4147</p>
               </div>
@@ -511,7 +511,7 @@ export default function Home() {
                 </div>
 
                 <button className='group transition-all duration-300 hover:bg-blue-400 hover:scale-105 font-bold text-center mx-auto mt-10 py-4 px-10 md:px-20 text-sm uppercase text-white bg-blue-500 flex items-center gap-3'>
-                  {t("submit")}
+                  Submit Message
                   <TbSend className='group-hover:rotate-45 transition-all duration-300'/>
                 </button>
               </div>

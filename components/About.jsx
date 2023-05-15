@@ -6,14 +6,14 @@ export default function About({t}) {
     <div id='aboutme' className='dark:bg-gray-700 bg-light p-2 md:p-5 min-h-screen flex items-center justify-center'>
         <div className='container mx-auto px-2 md:px-32'>
         <div className='text-center'>
-            <h1 className='text-blue-300 uppercase font-extrabold tracking-wider'>{t("about1")}</h1>
+            <h1 className='text-blue-300 uppercase font-extrabold tracking-wider'>About Me</h1>
 
             <div className='flex items-center justify-center gap-10 mt-5'>
             <span className='h-1 bg-gray-300 rounded-md w-20 inline-block'></span>
-            <h1 className='text-2xl md:text-5xl uppercase font-light text-gray-600 dark:text-gray-400'>{t("about2")}</h1>
+            <h1 className='text-2xl md:text-5xl uppercase font-light text-gray-600 dark:text-gray-400'>Introduction</h1>
             <span className='h-1 bg-gray-300 rounded-md w-20 inline-block'></span>
             </div>
-            <p className='text-center text-gray-500 dark:text-gray-300 mt-8 md:mt-12 w-full md:w-1/2 mx-auto text-sm md:text-base'>{t("about3")}</p>
+            <p className='text-center text-gray-500 dark:text-gray-300 mt-8 md:mt-12 w-full md:w-1/2 mx-auto text-sm md:text-base'>Hallo, saya Zinedine Ziddan Fahdlevy, saya lulusan jurusan Sistem Informatika, Jaringan dan Aplikasi di SMK Negeri 26 Jakarta</p>
         </div>
 
         <div className='md:flex gap-32 mt-10 md:mt-16'>
@@ -24,16 +24,16 @@ export default function About({t}) {
             </div>
             <div className='w-full md:w-3/4'>
             <div className='flex items-center border-b border-gray-300'>
-                <button onClick={() => setActive(1)} className={`${active == 1 ? "text-blue-500 border-blue-500 border-b-2":"text-gray-700 dark:text-gray-300"} px-0 md:px-10 py-5 uppercase font-bold text-xs md:text-sm w-1/3`}>{t("personality")}</button>
-                <button onClick={() => setActive(2)} className={`${active == 2 ? "text-blue-500 border-blue-500 border-b-2":"text-gray-700 dark:text-gray-300"} px-0 md:px-10 py-5 uppercase font-bold text-xs md:text-sm w-1/3`}>{t("experience")}</button>
-                <button onClick={() => setActive(3)} className={`${active == 3 ? "text-blue-500 border-blue-500 border-b-2":"text-gray-700 dark:text-gray-300"} px-0 md:px-10 py-5 uppercase font-bold text-xs md:text-sm w-1/3`}>{t("certificates")}</button>
+                <button onClick={() => setActive(1)} className={`${active == 1 ? "text-blue-500 border-blue-500 border-b-2":"text-gray-700 dark:text-gray-300"} px-0 md:px-10 py-5 uppercase font-bold text-xs md:text-sm w-1/3`}>Personality</button>
+                <button onClick={() => setActive(2)} className={`${active == 2 ? "text-blue-500 border-blue-500 border-b-2":"text-gray-700 dark:text-gray-300"} px-0 md:px-10 py-5 uppercase font-bold text-xs md:text-sm w-1/3`}>Experience</button>
+                <button onClick={() => setActive(3)} className={`${active == 3 ? "text-blue-500 border-blue-500 border-b-2":"text-gray-700 dark:text-gray-300"} px-0 md:px-10 py-5 uppercase font-bold text-xs md:text-sm w-1/3`}>Certificates</button>
             </div>
             <div className='mt-10'>
                 {
                     active == 1 ?
                     <>
-                        <p className='text-gray-500 dark:text-gray-300 leading-7 mb-5'>{t("personality1")}</p>
-                        <p className='text-gray-500 dark:text-gray-300 leading-7'>{t("personality2")}</p>
+                        <p className='text-gray-500 dark:text-gray-300 leading-7 mb-5'>Saya memiliki pengalaman bekerja selama 2 tahun di beberapa bidang pengembangan Aplikasi, termasuk Front End Developer, Back End Developer, dan Full Stack Developer. Saya ahli dalam membuat berbagai keperluan Website dengan antarmuka yang responsif serta berhasil meningkatkan muat halaman website hingga 50% dan meningkatkan konversi sebesar 25% dengan meminimalkan penggunaan paket pihak ketiga, file javascript, dan CSS menggunakan framework Next JS, React JS, TailwindCSS</p>
+                        <p className='text-gray-500 dark:text-gray-300 leading-7'>Saya orang yang bertanggung jawab, pekerja keras, mempunyai rasa penasaran yang kuat, dapat bekerja sama sebagai tim dan disiplin dalam mengerjakan segala hal. Selama disekolah saya selalu dilatih dan diberikan tantangan baru agar saya selalu bisa mengerjakan sesuatu dengan baik dan cepat. Selain itu, saya juga orang yang sangat tertarik di dunia programming, oleh sebabnya saya sangat antusias mempelajari tentang teknologi dan lingkungan baru</p>
                     </>
                     :""
                 }
